@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace balkezesek
 {
-    internal class osztaly
+    internal class jatekoskok
     {
+        public string nev { get; set; }
+        public int elso { get; set; }
+        public int utolso { get; set; }
+        public int suly { get; set; }
+        public int magassag { get; set; }
+
+
     }
 }

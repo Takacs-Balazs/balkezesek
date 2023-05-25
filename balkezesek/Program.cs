@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace balkezesek
 {
-    internal class osztaly
+    internal class balkez
     {
+        static List<jatekosok> ballista = new List<jatekoskok>();
+        StreamReader sr = new StreamReader("balkezesek.csv");
+
     }
 }
