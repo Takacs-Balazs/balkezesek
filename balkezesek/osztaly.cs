@@ -19,9 +19,9 @@ namespace balkezesek
         public int Suly { get => suly; set => suly = value; }
         public int Magassag { get => magassag; set => magassag = value; }
 
-        public jatekosok(string sor)
+        public jatekosok(string line)
         {
-            string[] adat = sor.Split(";");
+            string[] adat = line.Split(";");
             Nev = adat[0];
             Suly = int.Parse(adat[3]);
             Utolso = DateTime.Parse(adat[2]);
