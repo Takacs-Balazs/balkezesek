@@ -6,14 +6,28 @@ using System.Threading.Tasks;
 
 namespace balkezesek
 {
-    internal class jatekosok
+    public class jatekosok
     {
-        public string nev { get; set; }
-        public int elso { get; set; }
-        public int utolso { get; set; }
-        public int suly { get; set; }
-        public int magassag { get; set; }
+        string nev;
+        int suly;
+        DateTime utolso;
+        DateTime elso;
+        int magassag;
+        public string Nev { get => nev; set => nev = value; }
+        public DateTime Elso { get => elso; set => elso = value; }
+        public DateTime Utolso { get => utolso; set => utolso = value; }
+        public int Suly { get => suly; set => suly = value; }
+        public int Magassag { get => magassag; set => magassag = value; }
 
+        public jatekosok(string sor)
+        {
+            string[] adat = sor.Split(";");
+            Nev = adat[0];
+            Suly = int.Parse(adat[3]);
+            Utolso = DateTime.Parse(adat[2]);
+            Elso = DateTime.Parse(adat[1]);
+            Magassag = int.Parse(adat[4]);
+        }
 
     }
 }
