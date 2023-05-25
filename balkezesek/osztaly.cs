@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace balkezesek
 {
-    internal class jatekoskok
+    internal class jatekosok
     {
         public string nev { get; set; }
         public int elso { get; set; }

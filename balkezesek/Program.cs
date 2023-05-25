@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using balkezesek;
 
 namespace balkezesek
 {
+    static List<jatekosok> ballista = new List<jatekosok>();
+
     internal class balkez
     {
-        static List<jatekosok> ballista = new List<jatekoskok>();
         StreamReader sr = new StreamReader("balkezesek.csv");
 
     }
